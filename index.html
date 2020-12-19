@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*  Navigation  */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  /* overflow: hidden; */
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #232421;
+  background-color: darkgrey;
+  font-family: futura;
+}
+
+li a:hover {
+  background-color: #1111;
+  color: lightgray;
+}
+
+
+/*  End Navigation  */
+
+
+/* Contact form */
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #E67300;
+  color: #000000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffd3a8;
+  color: #111;
+}
+
+
+
+
+
+.formColumn {
+float: left;
+width: 50%;
+/* padding: 20px; */
+}
+
+/* End Contact form */
+
+
+
+
+
+
+
+
+
+.content {
+  max-width: 960px;
+  min-width: 500px;
+  margin: auto;
+}
+
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+
+
+@font-face {
+  font-family: futura;
+  src: url(/fonts/DidactGothic-Regular.ttf);
+}
+
+body  {
+  /* background-image: url('images/twigs.jpg'); */
+  background-color: #000000;
+  color: #efefef;
+  font-family: sans-serif;
+}
+
+div.right{
+  text-align: right;
+}
+
+
+
+.header {
+  background-color: #232421;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+
+h1
+{
+  color: #232421;
+  font-family: 'Source Sans Pro';
+  font-stretch: normal;
+  letter-spacing: 2px;
+  background-color: darkgrey;
+  padding-left: 20px;
+  margin-right: 35%;
+  margin-bottom: 0px;
+  word-wrap: normal;
+}
+
+h2
+{
+    color: #d0d0d0;
+  font-family: 'Source Sans Pro';
+  font-size: 20px;
+  font-stretch: semi-expanded;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #d0d0d0;
+}
+
+/*  font resizes with window */
+/* .dynofont {
+  font-size: 1.85vw;
+} */
+
+
+
+img {
+  border: 0px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.button {
+  background-color: #E67300;
+  border: none;
+  color: #000000;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-style: normal;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+* {
+box-sizing: border-box;
+}
+.imageColumn {
+float: left;
+width: 40%;
+padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Containers */
+
+
+.container {
+width: 100%;
+/* margin: auto; */
+margin-bottom: 100px;
+float: center;
+background-image: url('images/twigs.jpg');
+max-width: 1000px;
+min-width: 700px;
+}
+
+.container-p {
+width: 90%;
+padding: 50px;
+float: center;
+max-width: 1000px;
+min-width: 700px;
+font-family: 'Source Sans Pro';
+background-color: #060606;
+}
+
+
+.container-about {
+  width: 90%;
+  padding: 50px;
+  float: center;
+  max-width: 1000px;
+  min-width: 600px;
+  font-family: 'Source Sans Pro';
+  background-color: #060606;
+
+}
+
+
+.container-form {
+  margin: auto;
+width: 65%;
+padding: 50px;
+float: center;
+max-width: 1000px;
+min-width: 600px;
+font-family: 'Source Sans Pro';
+/* background-color: #060606; */
+}
+
+/* End Containers */
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="content">
+
+<div class:"header">
+  <h1>Paul Cristo Writes...</h1>
+
+
+
+  <ul>
+    <!-- <li><a class="active" href="#home">Home</a></li> -->
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About Paul</a></li>
+
+  </ul>
+
+</div>
+
+
+
+
+
+<!-- <div class="right">
+<h1>Paul Cristo Writes...</h1>
+</div> -->
+
+
+<div class="container">
+  <div class="imageColumn">
+    <img src="images/deadheading-3d.png" alt="3d" style="width:100%">
+  </div>
+  <div class="imageColumn">
+    <img src="images/deadheading-title-white.png" alt="title" style="width:100%">
+      <br>
+      <br>
+      <br>
+
+    <h2><div class="dynofont">A post-apocalyptic journey of survival, ingenuity, and a dollop of vengeance.</div></h2>
+
+    <div class="imageRow">
+      <br>
+    <a href="https://www.amazon.com/Deadheading-post-apocalyptic-survival-ingenuity-vengeance-ebook/dp/B086M71RNV" target=_blank><input type="button" class="button" value="BUY THE BOOK"></a>
+  <!-- <input type="button" class="button" value="READ AN EXCERPT"> -->
+</div>
+  </div>
+</div>
+
+
+<div class="container-about">
+<h2 id="about">About Paul...</h2>
+
+
+<p><b>As humans, our affinity for story runs deep.</b> No matter the medium or venue, the ineffable gravity of an engrossing drama is irresistible to us. Despite being perfectly aware we're sitting on a sofa or in a darkened theater, we freely suspend reality and surrender to the contrivances and manipulations of a stranger. But in exchange for our deference, we demand to be guided through a journey.</p>
+
+<p><b>My earliest memories are of my parents telling me bedtime stories. </b>Even before I could speak, I was drawn to a well-spun yarn. Who of us isn't? Goldilocks and the Three Bears can be absolutely riveting if told properly, which probably is why, much to the chagrin of my parents, I demanded to hear it every night before bed. Every single night.</p>
+
+<p><b>I eventually grew out of bedtime stories </b>and moved from my hometown Tulsa to spend my formative years in Phoenix. Music became my focus, leading me to music school at Berklee College and freezing my ass off for three and a half years. Following an intense period of study and a steady diet of 2am pizza, I moved to Los Angeles to pursue a career as a film composer. Two decades went by before I began to miss story time.</p>
+
+<p><b>My day job put me in close proximity to some wonderful storytellers, </b>which got my wheels turning. Though telling a story through music can be powerful and rewarding, a part of me wanted to capture whatever magical pixie dust my parents sprinkled onto their storytelling. At first, it felt presumptuous, even imposterous to think I might produce words worth reading. But then an idea struck, and I impulsively leapt from my MIDI keyboard to a QWERTY keyboard.</p>
+
+<p><b>I can't claim anything I write will deliver the same enchantment </b>as my parents' millionth recounting of Goldilocks and the Three Bears, but, hey, it's about the journey isn't it?</p>
+
+<p>Thanks for stopping by.</p>
+
+<center>
+<img src="images/momdad.jpg">
+<p><i>Mom & Dad 1994</i></p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="container-form">
+
+<!-- CSS Form -->
+
+<!-- <h2 id="contact">Shoot me a line:</h2>
+
+
+  <form action="/action_page.php">
+    <div class="formColumn">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+</div>
+
+  <div class="formColumn">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+</div>
+
+
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="johndoe@email.com">
+
+
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+
+    <input type="submit" value="Submit">
+  </form> -->
+
+
+
+<!-- End CSS Form -->
+
+
+
+
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvqSWURdgxPaQxjIzLcSkN9f1tmQjVznIoHgdCx2rdWvXb8g/viewform?embedded=true" width="640" height="1170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="contact">Loading…</iframe>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
