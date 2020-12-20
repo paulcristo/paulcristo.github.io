@@ -3,6 +3,10 @@
 <head>
 <style>
 
+
+
+
+
 /*  Navigation  */
 
 ul {
@@ -10,31 +14,47 @@ ul {
   margin: 0;
   padding: 0;
   width: 90%;
+  position: relative;
   /* overflow: hidden; */
-  background-color: #333;
+  /* background-color: #000000; */
 }
 
 li {
   float: right;
+
 }
 
 li a {
   display: block;
   text-align: right;
-  padding: 14px 16px;
+  padding: 14px 15px;
   text-decoration: none;
-  color: #232421;
-  background-color: darkgrey;
+  color: lightgray;
   font-family: futura;
+  font-size: 23px;
+  float: none;
 }
 
+
+
+
+
+
 li a:hover {
-  background-color: #1111;
-  color: lightgray;
+  /* background-color: #1111; */
+  color: #E67300;
+  transition: all 0.5s;
 }
 
 
 /*  End Navigation  */
+
+
+
+
+
+
+
 
 
 /* Contact form */
@@ -96,11 +116,6 @@ width: 50%;
 
 
 
-.content {
-  max-width: 960px;
-  min-width: 500px;
-  margin: auto;
-}
 
 
 
@@ -114,12 +129,6 @@ width: 50%;
   src: url(/fonts/DidactGothic-Regular.ttf);
 }
 
-body  {
-  /* background-image: url('images/twigs.jpg'); */
-  background-color: #000000;
-  color: #efefef;
-  font-family: sans-serif;
-}
 
 div.right{
   text-align: right;
@@ -127,13 +136,26 @@ div.right{
 
 
 
+
+
+
+
+
+/* Text */
+
 .header {
-  background-color: #232421;
+  /* background-color: #232421; */
   padding: 50px;
   margin: 20px;
   text-align: center;
 }
 
+body  {
+  /* background-image: url('images/twigs.jpg'); */
+  background-color: #000000;
+  color: #efefef;
+  font-family: sans-serif;
+}
 
 h1
 {
@@ -167,6 +189,69 @@ p {
 } */
 
 
+/* End Text */
+
+
+
+
+/* Buttons */
+
+
+
+.button {
+  border-radius: 4px;
+  background-color: #E67300;
+  border: 1px;
+  color: #000000;
+  padding: 15px 28px;
+  width: 200px;
+  /* text-align: center; */
+  /* display: inline-block; */
+  font-size: 16px;
+  font-style: normal;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* End Buttons */
+
+
+
+
+
+
+
+
+
+
 
 img {
   border: 0px solid #ddd;
@@ -177,30 +262,42 @@ img {
 }
 
 
-.button {
-  background-color: #E67300;
-  border: none;
-  color: #000000;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  font-style: normal;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+
+
+
+
+
+
+
+
+
 
 * {
 box-sizing: border-box;
 }
-.imageColumn {
+/* .imageColumn {
 float: left;
 width: 40%;
 padding: 20px;
+margin: auto;
+}
+
+.imageRow {
+  padding: inherit;
+} */
+
+
+.column {
+  column-width: 100%;
+  margin: auto;
 }
 
 
 
+
+hr.thin {
+  border-top: 4px dashed darkgrey;
+}
 
 
 
@@ -209,46 +306,67 @@ padding: 20px;
 /* Containers */
 
 
-.container {
-width: 100%;
-/* margin: auto; */
-margin-bottom: 100px;
-float: center;
-background-image: url('images/twigs.jpg');
-max-width: 1000px;
-min-width: 700px;
+
+.content {
+  max-width: 960px;
+  min-width: 500px;
+  margin: auto;
+
 }
 
-.container-p {
-width: 90%;
-padding: 50px;
-float: center;
-max-width: 1000px;
-min-width: 700px;
-font-family: 'Source Sans Pro';
-background-color: #060606;
+
+.box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 75px;
+  width: 90%;
+  /* height: 400px; */
+  padding: 50px;
+  background-image: url('images/twigs.jpg');
+  color: #d0d0d0;
+  /* border: 2px solid green; */
 }
+
+.box div {
+  width: auto;
+  padding: 15px;
+  text-align: left;
+  color: #d0d0d0;
+  font-family: 'Source Sans Pro';
+  /* border: 2px solid green; */
+}
+.green {
+
+}
+.blue {
+
+}
+
 
 
 .container-about {
   width: 90%;
   padding: 50px;
-  float: center;
-  max-width: 1000px;
-  min-width: 600px;
-  font-family: 'Source Sans Pro';
+  /* float: center; */
+  /* max-width: 1000px;
+  min-width: 700px; */
+  /* font-family: 'Source Sans Pro'; */
   background-color: #060606;
+  nowrap;
 
 }
 
 
 .container-form {
   margin: auto;
-width: 65%;
+width: 90%;
 padding: 50px;
 float: center;
 max-width: 1000px;
-min-width: 600px;
+min-width: 700px;
 font-family: 'Source Sans Pro';
 /* background-color: #060606; */
 }
@@ -258,31 +376,38 @@ font-family: 'Source Sans Pro';
 
 
 
-
+.width50 {
+  width: 50%;
+}
 
 
 
 
 </style>
-</head>
 
+
+<!-- <h1>Paul Cristo Writes...</h1> -->
+</head>
 <body>
 
 <div class="content">
 
-<div class:"header">
-  <h1>Paul Cristo Writes...</h1>
+<!-- <div class:"header"> -->
+  <!-- <h1>Paul Cristo Writes...</h1> -->
 
 
 
   <ul>
     <!-- <li><a class="active" href="#home">Home</a></li> -->
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About Paul</a></li>
+    <li><a href="#"> | Paul Cristo Writes...</a></li>
+    <li><a href="#contact"> | Contact</a></li>
+    <li><a href="#about"> | About Paul</a></li>
 
   </ul>
 
-</div>
+
+<!-- </div> -->
+
 
 
 
@@ -292,29 +417,21 @@ font-family: 'Source Sans Pro';
 <h1>Paul Cristo Writes...</h1>
 </div> -->
 
-
-<div class="container">
-  <div class="imageColumn">
-    <img src="images/deadheading-3d.png" alt="3d" style="width:100%">
-  </div>
-  <div class="imageColumn">
-    <img src="images/deadheading-title-white.png" alt="title" style="width:100%">
-      <br>
-      <br>
-      <br>
+<div class="box">
+  <div class="green"><img src="images/deadheading-3d.png" alt="3d" style="width: 1400px"></div>
+  <div class="blue"><img src="images/deadheading-title-white.png" alt="title" style="width:100%">
 
     <h2><div class="dynofont">A post-apocalyptic journey of survival, ingenuity, and a dollop of vengeance.</div></h2>
-
-    <div class="imageRow">
-      <br>
-    <a href="https://www.amazon.com/Deadheading-post-apocalyptic-survival-ingenuity-vengeance-ebook/dp/B086M71RNV" target=_blank><input type="button" class="button" value="BUY THE BOOK"></a>
-  <!-- <input type="button" class="button" value="READ AN EXCERPT"> -->
+    <a href="https://www.amazon.com/Deadheading-post-apocalyptic-survival-ingenuity-vengeance-ebook/dp/B086M71RNV" target=_blank><button class="button"><span>BUY THE BOOK </span></button></a>
+    <!-- value="BUY THE BOOK"></a> -->
 </div>
-  </div>
 </div>
 
 
 <div class="container-about">
+  <hr class="thin">
+
+
 <h2 id="about">About Paul...</h2>
 
 
@@ -335,7 +452,7 @@ font-family: 'Source Sans Pro';
 <p><i>Mom & Dad 1994</i></p>
 
 </div>
-</div>
+
 
 
 
@@ -383,11 +500,9 @@ font-family: 'Source Sans Pro';
 
 
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvqSWURdgxPaQxjIzLcSkN9f1tmQjVznIoHgdCx2rdWvXb8g/viewform?embedded=true" width="640" height="1170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="contact">Loading…</iframe>
-</div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvqSWURdgxPaQxjIzLcSkN9f1tmQjVznIoHgdCx2rdWvXb8g/viewform?embedded=true" width="640" height="1170" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="contact">Loading…</iframe>
+  </div>
 
-</div>
-</div>
 </div>
 
 
